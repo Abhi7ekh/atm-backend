@@ -2,6 +2,7 @@
 
 const express = require("express");
 const router = express.Router();
+
 const { verifyToken } = require("../middlewares/authMiddleware");
 const connectDB = require("../utils/db");
 
@@ -13,7 +14,7 @@ router.get("/", verifyToken, (req, res) => {
   });
 });
 
-// ✅ FIXED: Get All Students (Admin Only)
+// ✅ Admin: Get All Students
 router.get("/get-students", verifyToken, async (req, res) => {
   try {
     if (req.user.role !== "admin") {
