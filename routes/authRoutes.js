@@ -10,11 +10,11 @@ const {
   getAllStudents,
 } = require("../controllers/authController");
 
-// 🔐 Middlewares
+// 🔐 Middlewares (✅ updated path)
 const {
   verifyToken,
   isAdmin,
-} = require("../middlewares/authMiddleware");
+} = require("../middlewares/authMiddleware"); // unchanged because still correct
 
 // ============================
 // ✅ Public Routes

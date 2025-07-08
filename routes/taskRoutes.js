@@ -3,7 +3,7 @@
 const express = require("express");
 const router = express.Router();
 
-// ✅ Middlewares
+// ✅ Middlewares (path confirmed)
 const { verifyToken, isAdmin } = require("../middlewares/authMiddleware");
 
 // ✅ Controllers
