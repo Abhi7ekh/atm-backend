@@ -7,3 +7,11 @@ services:
     envVars:
       - key: PORT
         value: 10000
+      - key: CLOUDANT_API_KEY
+        sync: false
+      - key: CLOUDANT_USERNAME
+        sync: false
+      - key: CLOUDANT_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
