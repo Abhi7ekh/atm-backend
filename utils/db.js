@@ -13,7 +13,7 @@ const timeout = (ms) =>
 const connectDB = async () => {
   if (!cloudantClient) {
     const authenticator = new IamAuthenticator({
-      apikey: process.env.CLOUDANT_APIKEY,
+      apikey: process.env.CLOUDANT_API_KEY,
     });
 
     cloudantClient = CloudantV1.newInstance({ authenticator });
